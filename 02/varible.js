@@ -1,7 +1,7 @@
 // variables
 // ***VAR***
 //  *** VAR | LET | CONST 
-// DataType varname = Strogly Typed language
+// DataType varname = Stronly Typed language
 // Js -> loose 
 // var age=21
 // var num1=10
