@@ -37,10 +37,3 @@ console.log( typeof ('a'*1));  // NaN
 // TypeOf Opearator
 // to find the type of a number 
 console.log( typeof(213));
-
-
-
-
-
-
-
