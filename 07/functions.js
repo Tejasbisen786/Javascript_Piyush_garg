@@ -51,4 +51,3 @@ function addNumberV2(...numbers) {
 let result = addNumberV2(34,34,34);
 console.log( result);
 
-
