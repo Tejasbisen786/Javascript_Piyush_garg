@@ -32,7 +32,7 @@ const addTwo = (a, b) => a + b; // one liner
 
 // sayYes() // cant used before intiliazation
 const sayYes = () => {
-  //   console.log("Yes");
+    // console.log("Yes");
 };
 
 // This Keyword
