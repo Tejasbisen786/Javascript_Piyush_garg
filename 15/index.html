@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="block">
+      <h1>Hii Tejas</h1>
+      <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+      <h1 class="remove">Remove 1</h1>
+    </div>
+
+    <div class="block">
+      <h1>Hii Tejas</h1>
+      <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+      <h1 class="remove">Remove 2</h1>
+    </div>
+
+    <div class="block">
+      <h1>Hii Tejas</h1>
+      <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+      <h1 class="remove">Remove 3</h1>
+    </div>
+
+    <script>
+      const rm = document.getElementsByClassName("remove");
+      for (let i = 0; i < rm.length; i++) {
+        rm.item(i).remove();
+      }
+    </script>
+  </body>
+</html>
