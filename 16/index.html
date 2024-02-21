@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Event listener</h1>
+    <h2 id="nameBlock">Hey This Side Tejas Bisen</h2>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h6>Lorem, ipsum.</h6>
+    <button id="btn">Click Me</button>
+
+    <script>
+        addEventListener // override nahi hote
+        onlick // overide hota hai 
+      const allEle = document.querySelector("body").children;
+      for (let i = 0; i < allEle.length; i++) {
+        allEle.item(i).addEventListener("click", () => {
+          allEle.item(i).remove();
+        });
+      }
+    </script>
+
+    <script>
+    //   const btn1 = document.getElementById("btn");
+    //   const nameblock = document.getElementById("nameBlock");
+    //   btn1.addEventListener("click", () => {
+    //     if (nameblock.style.color === "red") {
+    //       nameblock.style.color = "blue";
+    //     } else {
+    //       nameblock.style.color = "red";
+    //     }
+    //   });
+
+      // code override issue  found
+      //    btn1.onclick=function(){
+      //     alert("hey ")
+      //    }
+
+      //    btn1.addEventListener('click',()=>{
+      //     alert("Hey")
+      //    })
+
+      // onlclick
+      // function handleButtonClick(){
+      //     console.log("Button CLicked");
+      //     alert("hey Im click")
+      // }
+    </script>
+  </body>
+</html>
