@@ -4,35 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .rounded {
+        border-radius: 50%;
+        height: 150px;
+        width: 200px;
+      }
+      .in-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      input[type="number" i] {
+        padding: 5px;
+        width: 40vw;
+        margin: 4px 0px;
+      }
+      label {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
   </head>
   <body>
     <h1>Event listener</h1>
     <h2 id="nameBlock">Hey This Side Tejas Bisen</h2>
-    <h3>Lorem ipsum dolor sit amet.</h3>
-    <h6>Lorem, ipsum.</h6>
+
+    <div id="mycontainer"></div>
+
+    <div id="imgContainer"></div>
+    <div class="in-box">
+      <label for="width"> Enter Width</label>
+      <input type="text" id="width"  />
+      <label for="height"> Enter height</label>
+      <input type="text" id="height"/>
+      <label for="width"> Enter Border Radius</label>
+      <input type="text" id="radius" />
+    </div>
+
     <button id="btn">Click Me</button>
+    <button id="btn1">Customize Image</button>
 
     <script>
-        addEventListener // override nahi hote
-        onlick // overide hota hai 
-      const allEle = document.querySelector("body").children;
-      for (let i = 0; i < allEle.length; i++) {
-        allEle.item(i).addEventListener("click", () => {
-          allEle.item(i).remove();
-        });
-      }
+      const btn = document.getElementById("btn");
+      const btn1 = document.getElementById("btn1");
+      const width = document.getElementById("width").value
+      const height = document.getElementById("height").value
+      const radius = document.getElementById("radius").value
+
+      const container = document.getElementById("mycontainer");
+      const imgContainer = document.getElementById("imgContainer");
+      //creating element dynamically
+     
+
+
+
+
+    
+
+
+
+
+
+      btn.addEventListener("click", () => {
+        const img = document.createElement("img");
+        img.src =
+          "https://images.pexels.com/photos/7292733/pexels-photo-7292733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+        // img.width="200px"
+        // img.height="150px"
+        // img.border="1px solid red"
+        img.classList.add("rounded");
+        imgContainer.appendChild(img);
+      });
+      //   let count = 1;
+      //  btn.addEventListener("click", () => {
+      //     const el = document.createElement("li");
+      //     el.innerText = count;
+      //     container.appendChild(el);
+      //     count++;
+      //   });
+
+      // addEventListener // override nahi hote
+      // onlick // overide hota hai
+      //   const allEle = document.querySelector("body").children;
+      //   for (let i = 0; i < allEle.length; i++) {
+      //     allEle.item(i).addEventListener("click", () => {
+      //       allEle.item(i).remove();
+      //     });
+      //   }
     </script>
 
     <script>
-    //   const btn1 = document.getElementById("btn");
-    //   const nameblock = document.getElementById("nameBlock");
-    //   btn1.addEventListener("click", () => {
-    //     if (nameblock.style.color === "red") {
-    //       nameblock.style.color = "blue";
-    //     } else {
-    //       nameblock.style.color = "red";
-    //     }
-    //   });
+      //   const btn1 = document.getElementById("btn");
+      //   const nameblock = document.getElementById("nameBlock");
+      //   btn1.addEventListener("click", () => {
+      //     if (nameblock.style.color === "red") {
+      //       nameblock.style.color = "blue";
+      //     } else {
+      //       nameblock.style.color = "red";
+      //     }
+      //   });
 
       // code override issue  found
       //    btn1.onclick=function(){
