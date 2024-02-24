@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color:black
+}
+h1{
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: grey;
+padding: 30px 0px;
+margin: 0;
+color: white;
+}
+.clock-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* debugging purpose */
+    /* border: 1px solid red;   */
+    margin: 20px 0px;
+}
+button{
+    width: 20vw;
+    margin: auto;
+    margin:3vh 40vw;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border-style: none;
+    background-color: green;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.clock-place{
+    color: green;
+    text-align: center;
+    /* margin-top: 20vh; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    border: 3px solid green;
+    margin:auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.num-box{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.number{
+    color: white;
+    font-size: 3rem;
+    border: 3px solid green;
+    padding: 3px;
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
