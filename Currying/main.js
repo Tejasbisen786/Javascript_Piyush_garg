@@ -13,7 +13,6 @@ function add(a) {
 const add1 = (a) => (b) => (c) => a + b + c;
 console.log(add1(1)(3)(4));
 
-
 let res = add(2)(3)(5);
 // console.log(res);
 
