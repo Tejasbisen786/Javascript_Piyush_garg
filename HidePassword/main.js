@@ -4,10 +4,9 @@ const btn = document.getElementById("btn");
 btn.addEventListener("click", () => {
   if (input.type === "password") {
     input.type = "text";
-    btn.innerText="Hide Password"
+    btn.innerText = "Hide Password";
   } else {
     input.type = "password";
-    btn.innerText="Show Password"
-
+    btn.innerText = "Show Password";
   }
 });
