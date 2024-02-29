@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="">
+      <h1 class="text-center bg-slate-300 p-3 text-2xl">
+        Profile Card Fetch API
+      </h1>
+    </div>
+
+    <div
+      class="box w-[300px] p-5 flex flex-col justify-center item-center border rounded mx-4 mt-5 shadow gap-2"
+    >
+      <img
+        src=" https://media.licdn.com/dms/image/D4D03AQE2njc2nYGKpQ/profile-displayphoto-shrink_800_800/0/1680788624294?e=2147483647&v=beta&t=yKAATiYQKvJynuTm0Pd-U8ZN3GtybjLspEeGDudiHWI"
+        alt=""
+        class="w-[200px] rounded-full"
+        id="img"
+      />
+      <h1 id="username">Tejas</h1>
+      <h2 id="following">Following</h2>
+      <h2 id="followers">Follwers</h2>
+      <h2 id="location">Location</h2>
+
+      <button class="bg-slate-500 rounded text-white p-2 text-xl" id="btn">
+        Fetch Data
+      </button>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
